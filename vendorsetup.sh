@@ -22,12 +22,10 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
   export USE_CCACHE="1"
   export TARGET_ARCH="arm64"
   export FOX_VANILLA_BUILD="1"
-  export OF_MAINTAINER="PrismaDroid"
   export LC_ALL="C"
   export FOX_VANILLA_BUILD=1
   export FOX_VENDOR_BOOT_RECOVERY=0
   export FOX_INSTALLER_VENDOR_BOOT_RAMDISK_INSTALL=0
-  export OF_FLASHLIGHT_ENABLE=1
   #export FOX_DELETE_AROMAFM=1
   export FOX_USE_UPDATED_MAGISKBOOT=1
 
