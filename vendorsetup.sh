@@ -18,12 +18,11 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
   # Version & Variant
   export FOX_BUILD_TYPE=Stable
-  export FOX_MAINTAINER_PATCH_VERSION=2
-  export USE_CCACHE="1"
+  export FOX_MAINTAINER_PATCH_VERSION=3
+  export USE_CCACHE=1
   export TARGET_ARCH="arm64"
-  export FOX_VANILLA_BUILD="1"
-  export LC_ALL="C"
   export FOX_VANILLA_BUILD=1
+  export LC_ALL="C"
   export FOX_VENDOR_BOOT_RECOVERY=0
   export FOX_INSTALLER_VENDOR_BOOT_RAMDISK_INSTALL=0
   export FOX_DELETE_AROMAFM=1
