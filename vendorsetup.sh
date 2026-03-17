@@ -18,7 +18,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
   # Version & Variant
   export FOX_BUILD_TYPE=Stable
-  export FOX_MAINTAINER_PATCH_VERSION=5
+  export FOX_MAINTAINER_PATCH_VERSION=8
   export USE_CCACHE=1
   export TARGET_ARCH="arm64"
   export FOX_VANILLA_BUILD=1
@@ -56,17 +56,17 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
   export OF_NO_ADDITIONAL_MIUI_PROPS_CHECK=1
 
   # device resolution
-  export OF_SCREEN_H=2400
-  export OF_STATUS_H= 70
+  export OF_SCREEN_H=2412
+  export OF_STATUS_H=144
   #export OF_STATUS_INDENT_LEFT=80
   #export OF_STATUS_INDENT_RIGHT=80
-  export OF_HIDE_NOTCH=0
+  export OF_HIDE_NOTCH=1
   export OF_CLOCK_POS=1
 
   #specific instructions
   export OF_USE_GREEN_LED=0
   export OF_ENABLE_FRP_ADDON=1
-  #OF_DEVICE_WITHOUT_PERSIST=1
+  export OF_DEVICE_WITHOUT_PERSIST=1
   export OF_DISABLE_MIUI_SPECIFIC_FEATURES=1
   export OF_DONT_PATCH_ON_FRESH_INSTALLATION=1
   export OF_NO_TREBLE_COMPATIBILITY_CHECK=1
