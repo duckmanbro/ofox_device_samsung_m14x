@@ -52,16 +52,16 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
   #----- OF SETTINGS ------
   # Mainteiner
-  OF_MAINTAINER := "@prisma_droid"
-  OF_NO_ADDITIONAL_MIUI_PROPS_CHECK := 1
+  export OF_MAINTAINER="@prisma_droid"
+  export OF_NO_ADDITIONAL_MIUI_PROPS_CHECK=1
 
   # device resolution
-  OF_SCREEN_H := 2408
-  OF_STATUS_H := 70
-  OF_STATUS_INDENT_LEFT := 80
-  OF_STATUS_INDENT_RIGHT := 80
-  OF_HIDE_NOTCH := 1
-  OF_CLOCK_POS := 1
+  export OF_SCREEN_H=2408
+  export OF_STATUS_H= 70
+  #export OF_STATUS_INDENT_LEFT=80
+  #export OF_STATUS_INDENT_RIGHT=80
+  export OF_HIDE_NOTCH=1
+  export OF_CLOCK_POS=1
 
   #specific instructions
   export OF_USE_GREEN_LED=0
