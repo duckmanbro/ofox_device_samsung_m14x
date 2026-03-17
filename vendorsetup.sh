@@ -50,6 +50,35 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
   export FOX_USE_SED_BINARY=1
   export FOX_USE_XZ_UTILS=1
 
+  #----- OF SETTINGS ------
+  # Mainteiner
+  OF_MAINTAINER := "@prisma_droid"
+  OF_NO_ADDITIONAL_MIUI_PROPS_CHECK := 1
+
+  # device resolution
+  OF_SCREEN_H := 2408
+  OF_STATUS_H := 70
+  OF_STATUS_INDENT_LEFT := 80
+  OF_STATUS_INDENT_RIGHT := 80
+  OF_HIDE_NOTCH := 1
+  OF_CLOCK_POS := 1
+
+  #specific instructions
+  export OF_USE_GREEN_LED=0
+  export OF_ENABLE_FRP_ADDON=1
+  #OF_DEVICE_WITHOUT_PERSIST=1
+  export OF_DISABLE_MIUI_SPECIFIC_FEATURES=1
+  export OF_DONT_PATCH_ON_FRESH_INSTALLATION=1
+  export OF_NO_TREBLE_COMPATIBILITY_CHECK=1
+  #export OF_USE_LEGACY_BATTERY_SERVICES=1
+  export OF_FLASHLIGHT_ENABLE=0
+  export OF_SPLASH_MAX_SIZE=130
+
+  # Decrypt/Encrypt
+  export OF_SKIP_FBE_DECRYPTION=1
+  export OF_DONT_PATCH_ENCRYPTED_DEVICE=0
+  #-------- EOF ----------
+
   # Compression & Binary
   #  export OF_USE_LZ4_COMPRESSION=1
   #  export FOX_USE_LZ4_BINARY=1
