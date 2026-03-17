@@ -16,10 +16,6 @@ fi
 
 if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
-  # Mainteiner
-  export OF_MAINTAINER="@prisma_droid"
-  export OF_NO_ADDITIONAL_MIUI_PROPS_CHECK=1
-
   # Version & Variant
   export FOX_BUILD_TYPE=Stable
   export FOX_MAINTAINER_PATCH_VERSION=2
@@ -34,7 +30,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
   #export FOX_USE_UPDATED_MAGISKBOOT=1
 
   # OrangeFox Addons
-  #export FOX_ENABLE_APP_MANAGER=1
+  export FOX_ENABLE_APP_MANAGER=1
 
   # General
   export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
