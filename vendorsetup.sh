@@ -57,13 +57,14 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
   # device resolution
   export OF_SCREEN_H=2412
-  export OF_STATUS_H=144
+  export OF_STATUS_H=0
   #export OF_STATUS_INDENT_LEFT=80
   #export OF_STATUS_INDENT_RIGHT=80
-  export OF_HIDE_NOTCH=1
+  #export OF_HIDE_NOTCH=0
   export OF_CLOCK_POS=1
 
   #specific instructions
+  export OF_TWRP_COMPATIBILITY_MODE=1
   export OF_USE_GREEN_LED=0
   export OF_ENABLE_FRP_ADDON=1
   export OF_DEVICE_WITHOUT_PERSIST=1
@@ -76,7 +77,10 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
   # Decrypt/Encrypt
   export OF_SKIP_FBE_DECRYPTION=1
-  export OF_DONT_PATCH_ENCRYPTED_DEVICE=0
+  export OF_NO_RELOAD_AFTER_DECRYPTION=1
+  #export OF_NO_KEYMASTER_VER_4X=1
+  export OF_SKIP_DECRYPTED_ADOPTED_STORAGE=1
+  export OF_DONT_PATCH_ENCRYPTED_DEVICE=1
   #-------- EOF ----------
 
   # Compression & Binary
