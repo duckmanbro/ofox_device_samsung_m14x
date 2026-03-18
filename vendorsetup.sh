@@ -56,8 +56,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
   export OF_NO_ADDITIONAL_MIUI_PROPS_CHECK=1
 
   # device resolution
-  export OF_SCREEN_H=2408
-  export OF_STATUS_H=25
+  export OF_SCREEN_H=2445
+  export OF_STATUS_H=45
   export OF_STATUS_INDENT_LEFT=80
   export OF_STATUS_INDENT_RIGHT=80
   export OF_HIDE_NOTCH=1

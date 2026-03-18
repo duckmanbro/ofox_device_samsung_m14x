@@ -20,9 +20,6 @@ DEVICE_PATH := device/samsung/m14x
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/recovery_dtbo
 
-# OFOX
-OF_SKIP_FBE_DECRYPTION := 1
-
 # Inherit from common tree
 include device/samsung/s5e8535-common/BoardConfigCommon.mk
 
